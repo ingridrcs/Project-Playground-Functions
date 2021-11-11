@@ -1,5 +1,5 @@
 // Desafio 1
-function compareTrue(git,) {
+function compareTrue() {
 
 }
 
@@ -10,8 +10,10 @@ function calcArea(base, height) {
 }
 
 // Desafio 3
-function splitSentence() {
-  
+//*Source: https://www.devmedia.com.br/javascript-split-dividindo-separando-strings/39254 */
+function splitSentence(frase) {
+  let resultado = frase.split(" ");
+  return resultado;
 }
 
 // Desafio 4
