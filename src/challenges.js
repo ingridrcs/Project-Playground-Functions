@@ -1,7 +1,11 @@
-// Desafio 1
-function compareTrue() {
+// Desafio 1 Source: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Expressions_and_operators
+function compareTrue(a,b) {
   // seu código aqui
-
+let final=false;
+if (a && b) {
+final = true;
+}
+return final;
 }
 
 // Desafio 2
@@ -38,6 +42,7 @@ function footballPoints(wins, ties) {
 // Desafio 6
 function highestCount() {
   // seu código aqui
+
 }
 
 // Desafio 7
