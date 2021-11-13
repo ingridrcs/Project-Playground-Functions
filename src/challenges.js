@@ -1,11 +1,11 @@
 // Desafio 1 Source: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Expressions_and_operators
-function compareTrue(a,b) {
+function compareTrue(a, b) {
   // seu código aqui
-let final=false;
-if (a && b) {
-final = true;
-}
-return final;
+  let final = false;
+  if (a && b) {
+    final = true;
+  }
+  return final;
 }
 
 // Desafio 2
@@ -40,9 +40,21 @@ function footballPoints(wins, ties) {
 }
 
 // Desafio 6
-function highestCount() {
+function highestCount(numeros) {
   // seu código aqui
-
+  let num = numeros[0];
+  let resultado = 0;
+  for (let i = 1; i < numeros.length; i += 1) {
+    if (numeros[i] >= num) {
+      num = numeros[i];
+    }
+  }
+  for (let index = 0; index < numeros.length; index += 1) {
+    if (num === numeros[index]) {
+      resultado += 1;
+    }
+  }
+  console.log(resultado);
 }
 
 // Desafio 7
