@@ -15,7 +15,6 @@ function calcArea(base, height) {
   return area;
 }
 
-
 // Desafio 3 //*Source: https://www.devmedia.com.br/javascript-split-dividindo-separando-strings/39254 */
 function splitSentence(frase) {
   // seu código aqui
@@ -30,7 +29,6 @@ function concatName(lista) {
   let resultado = `${lista[num]}, ${lista[0]}`;
   return resultado;
 }
-
 
 // Desafio 5
 function footballPoints(wins, ties) {
@@ -58,8 +56,19 @@ function highestCount(numeros) {
 }
 
 // Desafio 7
-function catAndMouse() {
+function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
+  let dif1 = Math.abs(mouse - cat1);
+  let dif2 = Math.abs(mouse - cat2);
+  if (dif1 < dif2) {
+    console.log("cat1");
+  }
+  else if (dif1 > dif2) {
+    console.log("cat2");
+  }
+  else {
+    console.log("os gatos trombam e o rato foge");
+  }
 }
 
 // Desafio 8
