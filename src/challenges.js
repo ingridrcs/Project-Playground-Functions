@@ -52,10 +52,11 @@ function highestCount(numeros) {
       resultado += 1;
     }
   }
-  console.log(resultado);
+  return resultado;
 }
 
-// Desafio 7
+// Desafio 7 Explicação do Math.abs: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
+//Source:https://www.youtube.com/watch?v=4cznE_iFv6s e dúvida de alunos no Slack :https://trybecourse.slack.com/archives/C02HY11SPJP/p1636730359399000
 function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
   let dif1 = Math.abs(mouse - cat1);
