@@ -61,13 +61,13 @@ function catAndMouse(mouse, cat1, cat2) {
   let dif1 = Math.abs(mouse - cat1);
   let dif2 = Math.abs(mouse - cat2);
   if (dif1 < dif2) {
-    console.log("cat1");
+    return 'cat1';
   }
-  else if (dif1 > dif2) {
-    console.log("cat2");
+  if (dif1 > dif2) {
+    return 'cat2';
   }
-  else {
-    console.log("os gatos trombam e o rato foge");
+  if (dif1 === dif2) {
+    return 'os gatos trombam e o rato foge';
   }
 }
 
