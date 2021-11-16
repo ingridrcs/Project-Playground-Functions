@@ -93,14 +93,28 @@ else {
 return final;
 }
 
-
-
 // Desafio 9
-function encode() {
+function encode(troca) {
   // seu código aqui
+  let final;
+  troca = troca.replace(/a/g, '1');
+  troca = troca.replace(/e/g, '2');
+  troca = troca.replace(/i/g, '3');
+  troca = troca.replace(/o/g, '4');
+  troca = troca.replace(/u/g, '5');
+  final = troca;
+  return final;
 }
-function decode() {
+function decode(troca2) {
   // seu código aqui
+  let final2;
+  troca2 = troca2.replace(/1/g, 'a');
+  troca2 = troca2.replace(/2/g, 'e');
+  troca2 = troca2.replace(/3/g, 'i');
+  troca2 = troca2.replace(/4/g, 'o');
+  troca2 = troca2.replace(/5/g, 'u');
+  final2 = troca2;
+  return final2;
 }
 
 module.exports = {
