@@ -1,4 +1,4 @@
-// Desafio 10
+// Desafio 10 Source : https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
 function techList(tech, name) {
   // seu código aqui
   tech.sort();
