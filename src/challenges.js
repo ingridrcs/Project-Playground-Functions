@@ -93,7 +93,8 @@ else {
 return final;
 }
 
-// Desafio 9 SOurce : //https://www.devmedia.com.br/javascript-replace-substituindo-valores-em-uma-string/39176
+// Desafio 9 Source : //https://www.devmedia.com.br/javascript-replace-substituindo-valores-em-uma-string/39176
+//Source: https://blog.betrybe.com/javascript/javascript-replace/
 function encode(troca) {
   // seu código aqui
   let final;
