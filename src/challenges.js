@@ -56,7 +56,7 @@ function highestCount(numeros) {
 }
 
 // Desafio 7 Explicação do Math.abs: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
-//Source:https://www.youtube.com/watch?v=4cznE_iFv6s e dúvida de alunos no Slack :https://trybecourse.slack.com/archives/C02HY11SPJP/p1636730359399000
+// Source:https://www.youtube.com/watch?v=4cznE_iFv6s e dúvida de alunos no Slack :https://trybecourse.slack.com/archives/C02HY11SPJP/p1636730359399000
 function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
   let dif1 = Math.abs(mouse - cat1);
@@ -75,26 +75,26 @@ function catAndMouse(mouse, cat1, cat2) {
 // Desafio 8
 function fizzBuzz(array) {
   // seu código aqui
-    let final = [];
-for (let i = 0; i < array.length; i += 1) {
+  let final = [];
+  for (let i = 0; i < array.length; i += 1) {
     if (array[i] % 3 === 0 && array[i] % 5 === 0) {
-    final.push('fizzBuzz');
+      final.push('fizzBuzz');
     }
-else if (array[i] % 3 === 0) {
-        final.push('fizz');
+    else if (array[i] % 3 === 0) {
+      final.push('fizz');
     }
-else if (array[i] % 5 === 0) {
-    final.push('buzz');
-}
-else {
-    final.push('bug!');
-}
-}
-return final;
+    else if (array[i] % 5 === 0) {
+      final.push('buzz');
+    }
+    else {
+      final.push('bug!');
+    }
+  }
+  return final;
 }
 
 // Desafio 9 Source : //https://www.devmedia.com.br/javascript-replace-substituindo-valores-em-uma-string/39176
-//Source: https://blog.betrybe.com/javascript/javascript-replace/
+// Source: https://blog.betrybe.com/javascript/javascript-replace/
 function encode(troca) {
   // seu código aqui
   let final;
