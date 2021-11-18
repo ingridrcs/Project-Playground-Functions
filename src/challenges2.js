@@ -16,29 +16,46 @@ function techList(tech, name) {
   return (listaNova);
 }
 
-// Desafio 11 Source:https://www.alura.com.br/artigos/javascript-replace-manipulando-strings-e-regex e https://blog.betrybe.com/javascript/javascript-replace/
+// Desafio 11 Source:https://www.alura.com.br/artigos/javascript-replace-manipulando-strings-e-regex
+//Source:https://blog.betrybe.com/javascript/javascript-replace/
+//Source: https://ricardo-reis.medium.com/splice-969723f47d26
+//Source:https://metring.com.br/javascript-converter-array-em-string
 function generatePhoneNumber(telefone) {
   // seu código aqui
-  let soma = 0;
+  let ddd;
+  let parte1;
+  let parte2;
+  let numeroFinal = '';
   if (telefone.length !== 11) {
-    return ('Array com tamanho incorreto.');
+    return 'Array com tamanho incorreto.';
   }
-  for (let i = 0; i < telefone.length; i += 1) {
-    if (telefone[i] < 0 || telefone[i] > 9) {
-      return ('não é possível gerar um número de telefone com esses valores');
-    }
-    for (let num = 0; num < telefone.length; num += 1) {
-      if (telefone[i] === telefone[num]) {
-        soma += 1;
+  else {
+    for (let i =0; i<telefone.length; i+=1) {
+      if (telefone[i] < 0 || telefone[i] > 9) {
+        return 'não é possível gerar um número de telefone com esses valores';
       }
-       if (soma >2) {
-      return ('não é possível gerar um número de telefone com esses valores');
+    }
+    for(let index=0;index<telefone.length;index+=1) {
+      let soma = 0;
+    for(let num=0; num<telefone.length;num +=1) {
+        if (telefone[index]=== telefone[num]) {
+          soma+=1;
+        }
+        if (soma>=3) {
+          return 'não é possível gerar um número de telefone com esses valores';
+        }
     }
     }
   }
-  return ('(telefone[0]+telefone[1])+" "+telefone[2]+telefone[3]+telefone[4]+telefone[5]+"-"+telefone[6]+telefone[7]+telefone[8]+telefone[9]+telefone[10]');
+  ddd = telefone.splice(0, 2);
+  ddd = ddd.join('');
+  parte1 = telefone.splice(0, 5);
+  parte1 = parte1.join('');
+  parte2 = telefone.splice(0, 4);
+  parte2 = parte2.join('');
+  numeroFinal = `(${ddd}) ${parte1}-${parte2}`;
+  return numeroFinal;
 }
-
 // Desafio 12 - Source: Math.abs https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
 function triangleCheck(lineA, lineB, lineC) {
   // seu código aqui
