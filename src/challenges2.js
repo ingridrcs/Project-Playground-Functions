@@ -17,9 +17,9 @@ function techList(tech, name) {
 }
 
 // Desafio 11 Source:https://www.alura.com.br/artigos/javascript-replace-manipulando-strings-e-regex
-//Source:https://blog.betrybe.com/javascript/javascript-replace/
-//Source: https://ricardo-reis.medium.com/splice-969723f47d26
-//Source:https://metring.com.br/javascript-converter-array-em-string
+// Source:https://blog.betrybe.com/javascript/javascript-replace/
+// Source: https://ricardo-reis.medium.com/splice-969723f47d26
+// Source:https://metring.com.br/javascript-converter-array-em-string
 function generatePhoneNumber(telefone) {
   // seu código aqui
   let ddd;
@@ -29,22 +29,20 @@ function generatePhoneNumber(telefone) {
   if (telefone.length !== 11) {
     return 'Array com tamanho incorreto.';
   }
-  else {
-    for (let i =0; i<telefone.length; i+=1) {
-      if (telefone[i] < 0 || telefone[i] > 9) {
+  for (let i = 0; i < telefone.length; i += 1) {
+    if (telefone[i] < 0 || telefone[i] > 9) {
+      return 'não é possível gerar um número de telefone com esses valores';
+    }
+  }
+  for (let index = 0; index < telefone.length; index += 1) {
+    let soma = 0;
+    for (let num = 0; num < telefone.length;num += 1) {
+      if (telefone[index] === telefone[num]) {
+        soma += 1;
+      }
+      if (soma >= 3) {
         return 'não é possível gerar um número de telefone com esses valores';
       }
-    }
-    for(let index=0;index<telefone.length;index+=1) {
-      let soma = 0;
-    for(let num=0; num<telefone.length;num +=1) {
-        if (telefone[index]=== telefone[num]) {
-          soma+=1;
-        }
-        if (soma>=3) {
-          return 'não é possível gerar um número de telefone com esses valores';
-        }
-    }
     }
   }
   ddd = telefone.splice(0, 2);
