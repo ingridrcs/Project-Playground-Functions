@@ -1,4 +1,5 @@
-// Desafio 10 Source : https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
+// Desafio 10
+// Source : https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
 function techList(tech, name) {
   // seu código aqui
   tech.sort();
@@ -16,10 +17,13 @@ function techList(tech, name) {
   return (listaNova);
 }
 
-// Desafio 11 Source:https://www.alura.com.br/artigos/javascript-replace-manipulando-strings-e-regex
+// Desafio 11
+// Source:https://www.alura.com.br/artigos/javascript-replace-manipulando-strings-e-regex
 // Source:https://blog.betrybe.com/javascript/javascript-replace/
 // Source: https://ricardo-reis.medium.com/splice-969723f47d26
 // Source:https://metring.com.br/javascript-converter-array-em-string
+// Meu código estava apresentando erros na parte de soma e na parte de colocar em formato de telefone, consegui tirar minhas dúvidas e entender o meu erro
+// através dos Pull Requets de Suéli Tristão e Byanca Knorst.
 function generatePhoneNumber(telefone) {
   // seu código aqui
   let ddd;
@@ -36,7 +40,7 @@ function generatePhoneNumber(telefone) {
   }
   for (let index = 0; index < telefone.length; index += 1) {
     let soma = 0;
-    for (let num = 0; num < telefone.length;num += 1) {
+    for (let num = 0; num < telefone.length; num += 1) {
       if (telefone[index] === telefone[num]) {
         soma += 1;
       }
@@ -54,7 +58,8 @@ function generatePhoneNumber(telefone) {
   numeroFinal = `(${ddd}) ${parte1}-${parte2}`;
   return numeroFinal;
 }
-// Desafio 12 - Source: Math.abs https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
+// Desafio 12
+// Source: Math.abs https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
 function triangleCheck(lineA, lineB, lineC) {
   // seu código aqui
   if (lineA < lineB + lineC && lineB < lineA + lineC && lineC < lineB + lineC) {
@@ -63,18 +68,17 @@ function triangleCheck(lineA, lineB, lineC) {
   if (lineA > Math.abs(lineB - lineC) && lineB > Math.abs(lineA - lineC) && lineC > Math.abs(lineA - lineB)) {
     return true;
   }
-  else {
-    return false;
-  }
+  return false;
 }
 
-// Desafio 13 Tirar os números de dentro de uma string:https://stackoverflow.com/questions/10003683/how-can-i-extract-a-number-from-a-string-in-javascript
-// Transformar string em array:https://pt.stackoverflow.com/questions/172749/como-transformar-string-em-array-de-caracteres
-// Uso do parseInt: https://pt.stackoverflow.com/questions/90841/somar-array-javascript e https://www.youtube.com/watch?v=w14BIa5fOuU
+// Desafio 13
+// Source: Tirar os números de dentro de uma string:https://stackoverflow.com/questions/10003683/how-can-i-extract-a-number-from-a-string-in-javascript
+// Source:Transformar string em array:https://pt.stackoverflow.com/questions/172749/como-transformar-string-em-array-de-caracteres
+// Source:Uso do parseInt: https://pt.stackoverflow.com/questions/90841/somar-array-javascript e https://www.youtube.com/watch?v=w14BIa5fOuU
 function hydrate(string) {
   // seu código aqui
   let final = 0;
-  let novo = string.replace(/[^0-9]/g,'');
+  let novo = string.replace(/[^0-9]/g, '');
   let array = novo.split('');
   for (let i = 0; i < array.length; i += 1) {
     final += parseInt(array[i]);
@@ -82,9 +86,7 @@ function hydrate(string) {
   if (final === 1) {
     return (final + ' ' + 'copo de água');
   }
-  else {
     return (final + ' ' + 'copos de água');
-  }
 }
 
 module.exports = {

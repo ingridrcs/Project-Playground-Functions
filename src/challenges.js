@@ -1,4 +1,5 @@
-// Desafio 1 Source: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Expressions_and_operators
+// Desafio 1
+// Source: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Expressions_and_operators
 function compareTrue(a, b) {
   // seu código aqui
   let final = false;
@@ -15,14 +16,16 @@ function calcArea(base, height) {
   return area;
 }
 
-// Desafio 3 //*Source: https://www.devmedia.com.br/javascript-split-dividindo-separando-strings/39254 */
+// Desafio 3
+// Source: https://www.devmedia.com.br/javascript-split-dividindo-separando-strings/39254
 function splitSentence(frase) {
   // seu código aqui
   let resultado = frase.split(' ');
   return resultado;
 }
 
-// Desafio 4 //*Source: estava com dúvida de como escrever o resultado e consegui solucionar através do slack https://trybecourse.slack.com/archives/C02HY11SPJP/p1636663927349400?thread_ts=1636663852.348500&cid=C02HY11SPJP*/
+// Desafio 4
+// Source: estava com dúvida de como escrever o resultado e consegui solucionar através do slack https://trybecourse.slack.com/archives/C02HY11SPJP/p1636663927349400?thread_ts=1636663852.348500&cid=C02HY11SPJP
 function concatName(lista) {
   // seu código aqui
   let num = lista.length - 1;
@@ -55,8 +58,10 @@ function highestCount(numeros) {
   return resultado;
 }
 
-// Desafio 7 Explicação do Math.abs: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
-// Source:https://www.youtube.com/watch?v=4cznE_iFv6s e dúvida de alunos no Slack :https://trybecourse.slack.com/archives/C02HY11SPJP/p1636730359399000
+// Desafio 7
+// Source: Explicação do Math.abs: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math/abs
+// Source:https://www.youtube.com/watch?v=4cznE_iFv6s
+// Source: Dúvida de alunos no Slack :https://trybecourse.slack.com/archives/C02HY11SPJP/p1636730359399000
 function catAndMouse(mouse, cat1, cat2) {
   // seu código aqui
   let dif1 = Math.abs(mouse - cat1);
@@ -93,7 +98,8 @@ function fizzBuzz(array) {
   return final;
 }
 
-// Desafio 9 Source : //https://www.devmedia.com.br/javascript-replace-substituindo-valores-em-uma-string/39176
+// Desafio 9 
+// Source://https://www.devmedia.com.br/javascript-replace-substituindo-valores-em-uma-string/39176
 // Source: https://blog.betrybe.com/javascript/javascript-replace/
 function encode(troca) {
   // seu código aqui
